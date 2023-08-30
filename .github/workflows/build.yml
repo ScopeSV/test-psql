@@ -12,8 +12,15 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Build
+      - name: Setup node
         uses: actions/setup-node@v3
         with:
           node-version: 18
+
+      - name: Install dependencies
+        run: npm install
+      
+      - name: Test
+        run: npm run test
+      
     
