@@ -1,0 +1,29 @@
+{
+    "compileOnSave": true,
+    "compilerOptions": {
+        "target": "ESNext",
+        "lib": ["ESNext", "ESNext.AsyncIterable"],
+        "allowJs": true,
+        "module": "commonjs",
+        "strict": true,
+        "skipLibCheck": true,
+        "noEmitOnError": true,
+        "noImplicitReturns": true,
+        "noImplicitThis": true,
+        "noImplicitAny": false,
+        "strictNullChecks": true,
+        "forceConsistentCasingInFileNames": true,
+        "inlineSourceMap": true,
+        "noEmitHelpers": true,
+        "importHelpers": true,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "sourceRoot": "./src",
+        "outDir": "./build",
+        "typeRoots": ["./src/types/express/index.d.ts", "./node_modules/@types"]
+    },
+    "ts-node": {
+        "files": true
+    },
+    "exclude": ["build", "node_modules", "**/*.bck.ts"]
+}
